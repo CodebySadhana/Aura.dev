@@ -116,6 +116,7 @@ Stop Conditions:
 ---
 
 # **Organizational Structure**
+# **Organizational Structure**
 
 ## **CEO Department**
 
@@ -166,11 +167,22 @@ Specialists:
 
 ---
 
-## **Backend Department**
+## **Backend Engineering Department**
 
 Supervisor:
 
 * Sanjay Ghemawat
+
+Specialists:
+
+* Werner Vogels  
+* Martin Kleppmann  
+* Charity Majors  
+* Kelsey Hightower  
+* Guido van Rossum  
+* Robert C. Martin  
+* Kent Beck  
+* Gergely Orosz
 
 ---
 
@@ -178,23 +190,17 @@ Supervisor:
 
 Supervisor:
 
-* Andrej Karpathy
+* Andrew Ng
 
----
+Specialists:
 
-## **Security Department**
-
-Supervisor:
-
-* Parisa Tabriz
-
----
-
-## **QA Department**
-
-Supervisor:
-
-* James Whittaker
+* Ilya Sutskever  
+* Andrej Karpathy  
+* Jeremy Howard  
+* Fei-Fei Li  
+* Yann LeCun  
+* Demis Hassabis  
+* Rachel Thomas
 
 ---
 
@@ -204,6 +210,14 @@ Supervisor:
 
 * Dylan Field
 
+Specialists:
+
+* Jony Ive  
+* Julie Zhuo  
+* Pablo Stanley  
+* Refik Anadol  
+* Sarah Drasner
+
 ---
 
 ## **Marketing Department**
@@ -212,13 +226,13 @@ Supervisor:
 
 * April Dunford
 
----
+Specialists:
 
-## **Finance Department**
-
-Supervisor:
-
-* Warren Buffett
+* Seth Godin  
+* Alex Hormozi  
+* David Ogilvy  
+* Katelyn Bourgoin  
+* Brian Balfour
 
 ---
 
@@ -228,6 +242,28 @@ Supervisor:
 
 * Patrick Collison
 
+Specialists:
+
+* Sheryl Sandberg  
+* Jocko Willink  
+* Claire Hughes Johnson  
+* Rory Sutherland
+
+---
+
+## **Finance Department**
+
+Supervisor:
+
+* Warren Buffett
+
+Specialists:
+
+* Charlie Munger  
+* Aswath Damodaran  
+* Ray Dalio  
+* Mary Meeker
+
 ---
 
 ## **Legal Department**
@@ -235,6 +271,59 @@ Supervisor:
 Supervisor:
 
 * Ben Horowitz
+
+Specialists:
+
+* Harvey Specter
+
+---
+
+## **Security Department**
+
+Supervisor:
+
+* Parisa Tabriz
+
+Specialists:
+
+* Adam Shostack  
+* Dan Boneh  
+* Anton Chuvakin  
+* Kevin Mandia  
+* Mark Russinovich
+
+---
+
+## **QA Department**
+
+Supervisor:
+
+* James Whittaker
+
+Specialists:
+
+* Angie Jones  
+* Michael Feathers  
+* Nicholas Carlini  
+* Dan Hendrycks  
+* Nancy Leveson
+
+---
+
+## **Research / Advisory Department**
+
+Supervisor:
+
+* Leonardo da Vinci
+
+Specialists:
+
+* Daniel Kahneman  
+* Reid Hoffman  
+* Peter Thiel  
+* George Hotz  
+* Lex Fridman  
+* Richard Feynman
 
 ---
 
@@ -600,4 +689,3 @@ Always optimize for:
 * modularity  
 * scalability  
 * organizational learning
-
