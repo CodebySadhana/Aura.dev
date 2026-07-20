@@ -1,0 +1,3 @@
+# David Ogilvy
+
+Copywriting Specialist

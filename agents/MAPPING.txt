@@ -1,0 +1,67 @@
+01-ceo-founder/head-dario-amodei/skill.md  <-  #01 Dario Amodei (HEAD)
+01-ceo-founder/elon-musk/skill.md  <-  #02 Elon Musk
+01-ceo-founder/sam-altman/skill.md  <-  #03 Sam Altman
+01-ceo-founder/brian-chesky/skill.md  <-  #04 Brian Chesky
+01-ceo-founder/satya-nadella/skill.md  <-  #05 Satya Nadella
+01-ceo-founder/alexandr-wang/skill.md  <-  #06 Alexandr Wang
+01-ceo-founder/naval-ravikant/skill.md  <-  #07 Naval Ravikant
+02-cto-eto/head-mira-murati/skill.md  <-  #08 Mira Murati (HEAD)
+02-cto-eto/jeff-dean/skill.md  <-  #09 Jeff Dean
+02-cto-eto/greg-brockman/skill.md  <-  #10 Greg Brockman
+02-cto-eto/urs-holzle/skill.md  <-  #11 Urs Holzle
+02-cto-eto/jared-kaplan/skill.md  <-  #12 Jared Kaplan
+02-cto-eto/jensen-huang/skill.md  <-  #13 Jensen Huang
+03-product-manager/head-mike-krieger/skill.md  <-  #14 Mike Krieger (HEAD)
+03-product-manager/kevin-weil/skill.md  <-  #15 Kevin Weil
+03-product-manager/shreyas-doshi/skill.md  <-  #16 Shreyas Doshi
+03-product-manager/sundar-pichai/skill.md  <-  #17 Sundar Pichai
+03-product-manager/ivan-zhao/skill.md  <-  #18 Ivan Zhao
+03-product-manager/aparna-chennapragada/skill.md  <-  #19 Aparna Chennapragada
+04-backend-engineering/head-sanjay-ghemawat/skill.md  <-  #20 Sanjay Ghemawat (HEAD)
+04-backend-engineering/werner-vogels/skill.md  <-  #21 Werner Vogels
+04-backend-engineering/martin-kleppmann/skill.md  <-  #22 Martin Kleppmann
+04-backend-engineering/charity-majors/skill.md  <-  #23 Charity Majors
+04-backend-engineering/kelsey-hightower/skill.md  <-  #24 Kelsey Hightower
+04-backend-engineering/guido-van-rossum/skill.md  <-  #25 Guido van Rossum
+04-backend-engineering/robert-c-martin/skill.md  <-  #26 Robert C Martin
+04-backend-engineering/kent-beck/skill.md  <-  #27 Kent Beck
+04-backend-engineering/gergely-orosz/skill.md  <-  #28 Gergely Orosz
+05-ai-engineering/head-andrew-ng/skill.md  <-  #29 Andrew Ng (HEAD)
+05-ai-engineering/ilya-sutskever/skill.md  <-  #30 Ilya Sutskever
+05-ai-engineering/andrej-karpathy/skill.md  <-  #31 Andrej Karpathy
+05-ai-engineering/jeremy-howard/skill.md  <-  #32 Jeremy Howard
+05-ai-engineering/fei-fei-li/skill.md  <-  #33 Fei Fei Li
+05-ai-engineering/yann-lecun/skill.md  <-  #34 Yann Lecun
+05-ai-engineering/demis-hassabis/skill.md  <-  #35 Demis Hassabis
+05-ai-engineering/rachel-thomas/skill.md  <-  #36 Rachel Thomas
+06-design/head-dylan-field/skill.md  <-  #37 Dylan Field (HEAD)
+06-design/jony-ive/skill.md  <-  #38 Jony Ive
+06-design/julie-zhuo/skill.md  <-  #39 Julie Zhuo
+06-design/pablo-stanley/skill.md  <-  #40 Pablo Stanley
+06-design/refik-anadol/skill.md  <-  #41 Refik Anadol
+06-design/sarah-drasner/skill.md  <-  #42 Sarah Drasner
+07-marketing/head-april-dunford/skill.md  <-  #43 April Dunford (HEAD)
+07-marketing/seth-godin/skill.md  <-  #44 Seth Godin
+07-marketing/alex-hormozi/skill.md  <-  #45 Alex Hormozi
+07-marketing/david-ogilvy/skill.md  <-  #46 David Ogilvy
+07-marketing/katelyn-bourgoin/skill.md  <-  #47 Katelyn Bourgoin
+07-marketing/brian-balfour/skill.md  <-  #48 Brian Balfour
+08-operations/head-patrick-collison/skill.md  <-  #49 Patrick Collison (HEAD)
+08-operations/sheryl-sandberg/skill.md  <-  #50 Sheryl Sandberg
+08-operations/jocko-willink/skill.md  <-  #51 Jocko Willink
+08-operations/claire-hughes-johnson/skill.md  <-  #52 Claire Hughes Johnson
+08-operations/rory-sutherland/skill.md  <-  #53 Rory Sutherland
+09-finance/head-warren-buffett/skill.md  <-  #54 Warren Buffett (HEAD)
+09-finance/charlie-munger/skill.md  <-  #55 Charlie Munger
+09-finance/aswath-damodaran/skill.md  <-  #56 Aswath Damodaran
+09-finance/ray-dalio/skill.md  <-  #57 Ray Dalio
+09-finance/mary-meeker/skill.md  <-  #58 Mary Meeker
+10-legal/head-ben-horowitz/skill.md  <-  #59 Ben Horowitz (HEAD)
+10-legal/harvey-specter/skill.md  <-  #60 Harvey Specter
+11-unassigned/daniel-kahneman/skill.md  <-  #61 Daniel Kahneman
+11-unassigned/reid-hoffman/skill.md  <-  #62 Reid Hoffman
+11-unassigned/peter-thiel/skill.md  <-  #63 Peter Thiel
+11-unassigned/george-hotz/skill.md  <-  #64 George Hotz
+11-unassigned/lex-fridman/skill.md  <-  #65 Lex Fridman
+11-unassigned/richard-feynman/skill.md  <-  #66 Richard Feynman
+11-unassigned/leonardo-da-vinci/skill.md  <-  #67 Leonardo da Vinci
