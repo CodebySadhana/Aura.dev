@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: aura-api
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /openapi.json
+    envVars:
+      - key: AURA_CORS_ORIGINS
+        value: https://codebysadhana.github.io

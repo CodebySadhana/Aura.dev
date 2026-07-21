@@ -1,0 +1,6 @@
+{
+  "id": "default-team",
+  "name": "Default delivery team",
+  "description": "CEO-led departments that delegate, execute, and independently verify outcomes.",
+  "agents": ["CEO", "CTO", "Research Lead", "Product Lead", "Security Lead", "Coder", "Executor", "WebSurfer", "FileSurfer", "RAG Agent", "QA Reviewer"]
+}

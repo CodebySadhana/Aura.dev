@@ -1,0 +1,23 @@
+import { FormEvent, useEffect, useState } from 'react'
+import { ArrowRight } from 'lucide-react'
+import { motion } from 'motion/react'
+
+const API = import.meta.env.VITE_API_URL || '/api/v1'
+const HERO_VIDEO_SRC = 'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260603_132049_036591b8-6e92-4760-b94c-a7ea6eef315c.mp4'
+type Message = { source: string; content?: string; stop_reason?: string }
+
+export function Hero({ taskContext }: { taskContext: string }) {
+  const [query, setQuery] = useState(''); const [messages, setMessages] = useState<Message[]>([]); const [running, setRunning] = useState(false)
+  useEffect(() => { if (taskContext) setQuery(taskContext) }, [taskContext])
+  const submit = async (event: FormEvent) => { event.preventDefault(); if (!query.trim() || running) return; setRunning(true); setMessages([])
+    try { const start = await fetch(`${API}/chat/start`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ user_id: 'local-user', content: query, agents: [] }) }); if (!start.ok) throw Error(); const { session_id } = await start.json(); const response = await fetch(`${API}/chat/stream?session_id=${session_id}`); const reader = response.body?.getReader(); if (!reader) throw Error(); const decoder = new TextDecoder(); let remainder = ''; while (true) { const { value, done } = await reader.read(); if (done) break; remainder += decoder.decode(value, { stream: true }); const chunks = remainder.split('\n\n'); remainder = chunks.pop() || ''; chunks.forEach(chunk => { if (chunk.startsWith('data: ')) { const message = JSON.parse(chunk.slice(6)) as Message; setMessages(current => [...current, message]); if (message.stop_reason) setRunning(false) } }) } } catch { setMessages([{ source: 'Aura.dev', content: 'Could not reach the API. Start the backend on port 8000.' }]); setRunning(false) }
+  }
+  return <section id="about" className="relative min-h-[110vh] sm:min-h-[140vh] w-full flex flex-col items-center justify-start overflow-hidden bg-bg-base">
+    <div className="absolute top-[15vh] sm:top-[20vh] left-0 w-full h-[95vh] sm:h-[120vh] z-0 pointer-events-none"><video autoPlay loop muted playsInline className="w-full h-full object-cover opacity-100" src={HERO_VIDEO_SRC}/><div className="absolute top-0 left-0 w-full h-24 sm:h-32 bg-gradient-to-b from-bg-base to-transparent" /></div>
+    <div className="max-w-7xl w-full mx-auto px-8 md:px-16 lg:px-20 relative z-10 grid grid-cols-12 gap-x-4 md:gap-x-8 pt-40 sm:pt-56"><div className="col-span-12 md:col-span-10 md:col-start-2">
+      <motion.h1 initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .8 }} className="text-5xl md:text-6xl lg:text-[76px] font-display leading-[1.08] tracking-tight"><span className="text-[#1a1a1a]">Aura.dev is the operating system</span><br/><span className="text-[#8e8e8e]">for an entire company of specialists —</span><br/><span className="text-[#8e8e8e]">agents that research, design, build, and review —</span><br/><span className="text-[#8e8e8e]">all working inside your <span className="w-[16px] md:w-[42px] lg:w-[62px] h-[.68em] border-[2px] border-[#1a1a1a] rounded-full inline-flex items-center justify-center align-middle"><span className="w-2 h-2 bg-[#1a1a1a] rounded-full"/></span> dream team.</span></motion.h1>
+      <motion.form initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .15 }} onSubmit={submit} className="mt-12 max-w-xl bg-white rounded-[6px] border border-black/[0.05] p-1 pl-4 flex items-center shadow-sm"><input value={query} onChange={event => setQuery(event.target.value)} placeholder="Ask your dream team anything..." className="min-w-0 flex-1 bg-transparent outline-none py-2"/><button className="bg-[#1a1a1a] text-white w-9 h-9 rounded-full relative grid place-items-center" aria-label="Send prompt"><ArrowRight size={17}/></button></motion.form>
+      {messages.length > 0 && <div className="mt-6 max-w-xl rounded-2xl bg-white/75 border border-black/5 p-4 space-y-3">{messages.map((message, index) => <div key={index}><b className="font-display">{message.source}</b><p className="text-sm text-zinc-600 whitespace-pre-wrap">{message.content || message.stop_reason}</p></div>)}</div>}
+    </div></div><button className="absolute right-5 top-1/2 z-10 rounded-full border border-white/50 bg-white/45 px-4 py-2 text-xs backdrop-blur">pl — en</button><span className="absolute bottom-8 left-5 z-10 text-xs">2026</span><span id="contact" className="absolute bottom-8 right-5 z-10 text-xs">multi-agent orchestration</span>
+  </section>
+}
